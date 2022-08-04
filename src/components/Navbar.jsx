@@ -10,9 +10,12 @@ const Titulo = styled.h1`
 
 const Navbar = () => {
   return (
-    <header>
+    <>
+      <div className="autor">GDcode</div>
+      <header>
         <Titulo>App Clima</Titulo>
-    </header>
+      </header>
+    </>
   )
 }
 

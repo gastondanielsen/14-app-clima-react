@@ -7,3 +7,14 @@
 body {
   background-color: #242424;
 }
+
+.autor {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #fff;
+  background-color: skyblue;
+  font-weight: bold;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
