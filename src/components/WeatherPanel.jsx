@@ -1,14 +1,11 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 import Card from "./Card";
 import Form from "./Form";
 
 const WeatherPanel = () => {
-  let urlWeather =
-    "https://api.openweathermap.org/data/2.5/weather?appid=175c646c3c3e1d585e825f08527c6b1c&lang=es";
+  let urlWeather = import.meta.env.VITE_URL_WEATHER;
   let cityUrl = "&q=";
-  let urlForecast =
-    "https://api.openweathermap.org/data/2.5/forecast?appid=175c646c3c3e1d585e825f08527c6b1c&lang=es";
+  let urlForecast = import.meta.env.VITE_URL_FORECAST;
 
   const [weather, setWeather] = useState([]);
   const [forecast, setForecast] = useState([]);
